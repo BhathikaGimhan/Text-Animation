@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+.text {
+    fill: none;
+    stroke-width: 3;
+    stroke-linejoin: round;
+    stroke-dasharray: 70 330;
+    stroke-dashoffset: 0;
+    -webkit-animation: stroke 6s infinite linear;
+    animation: stroke 6s infinite linear;
+}
+
+.text:nth-child(5n+1) {
+    stroke: #ffd1d1;
+    text-shadow: 0 0 30px #ff0000;
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s;
+}
+
+.text:nth-child(5n+2) {
+    stroke: #b09bff;
+    text-shadow: 0 0 30px #3703f5;
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s;
+}
+
+.text:nth-child(5n+3) {
+    text-shadow: 0 0 30px #33ff00;
+    stroke: #cfffca;
+    -webkit-animation-delay: -3.6s;
+    animation-delay: -3.6s;
+}
+
+.text:nth-child(5n+4) {
+    text-shadow: 0 0 30px #ff00d4;
+    stroke: #ffd3ee;
+    -webkit-animation-delay: -4.8s;
+    animation-delay: -4.8s;
+}
+
+.text:nth-child(5n+5) {
+    text-shadow: 0 0 30px #fffb00;
+    stroke: #fffed2;
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+    100% {
+        stroke-dashoffset: -100;
+    }
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #111;
+    background-size: 0.2em 100%;
+    font: 5em/1 Open Sans, Impact;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
